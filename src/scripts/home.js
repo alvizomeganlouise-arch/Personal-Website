@@ -1,7 +1,4 @@
-window.addEventListener('load', function () {
-  // Petals start after branches finish growing (~3.5s)
-  setTimeout(spawnPetals, 3500);
-});
+window.addEventListener('load', spawnPetals);
 
 function spawnPetals() {
   const container = document.getElementById('petalsContainer');

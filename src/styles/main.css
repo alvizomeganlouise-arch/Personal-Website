@@ -135,7 +135,7 @@ body {
 }
 .modal-link-icon svg { width: 22px; height: 22px; }
 
-.modal-link-icon.linkedin { background: #e8f0fe; }
+.modal-link-icon.linkedin { background: #fce4ec; }
 .modal-link-icon.instagram { background: #fce4ec; }
 .modal-link-icon.email { background: #fce4ec; }
 
@@ -201,6 +201,17 @@ body {
   border-radius: 20px;
   box-shadow: 0 2px 16px rgba(200,100,120,0.08);
   padding: 28px;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Tag / badge ── */
