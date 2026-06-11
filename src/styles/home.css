@@ -56,18 +56,18 @@ body {
   animation: bloomIn 0.6s ease-out forwards;
 }
 
-.blossom:nth-child(1)  { animation-delay: 2.6s; }
-.blossom:nth-child(2)  { animation-delay: 2.7s; }
-.blossom:nth-child(3)  { animation-delay: 2.75s; }
-.blossom:nth-child(4)  { animation-delay: 2.8s; }
-.blossom:nth-child(5)  { animation-delay: 2.85s; }
-.blossom:nth-child(6)  { animation-delay: 2.9s; }
-.blossom:nth-child(7)  { animation-delay: 2.95s; }
-.blossom:nth-child(8)  { animation-delay: 3.0s; }
-.blossom:nth-child(9)  { animation-delay: 3.05s; }
-.blossom:nth-child(10) { animation-delay: 3.1s; }
-.blossom:nth-child(11) { animation-delay: 3.15s; }
-.blossom:nth-child(12) { animation-delay: 3.2s; }
+.blossom-group .blossom:nth-child(1)  { animation-delay: 2.6s; }
+.blossom-group .blossom:nth-child(2)  { animation-delay: 2.7s; }
+.blossom-group .blossom:nth-child(3)  { animation-delay: 2.75s; }
+.blossom-group .blossom:nth-child(4)  { animation-delay: 2.8s; }
+.blossom-group .blossom:nth-child(5)  { animation-delay: 2.85s; }
+.blossom-group .blossom:nth-child(6)  { animation-delay: 2.9s; }
+.blossom-group .blossom:nth-child(7)  { animation-delay: 2.95s; }
+.blossom-group .blossom:nth-child(8)  { animation-delay: 3.0s; }
+.blossom-group .blossom:nth-child(9)  { animation-delay: 3.05s; }
+.blossom-group .blossom:nth-child(10) { animation-delay: 3.1s; }
+.blossom-group .blossom:nth-child(11) { animation-delay: 3.15s; }
+.blossom-group .blossom:nth-child(12) { animation-delay: 3.2s; }
 
 @keyframes bloomIn {
   0%   { opacity: 0; transform: scale(0.3); }
