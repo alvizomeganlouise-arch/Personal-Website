@@ -34,7 +34,7 @@ function createPetal(container, colors, delay) {
   petal.className = 'petal';
 
   const size = 7 + Math.random() * 7;
-  const leftStart = Math.random() * 30; // petals fall near the left tree
+  const leftStart = Math.random() * 100;
   const duration = 5 + Math.random() * 6;
   const color = colors[Math.floor(Math.random() * colors.length)];
 
@@ -52,7 +52,7 @@ function createPetal(container, colors, delay) {
 
   // Re-spawn when animation ends
   petal.addEventListener('animationiteration', () => {
-    petal.style.left = Math.random() * 30 + 'vw';
+    petal.style.left = Math.random() * 100 + 'vw';
     petal.style.animationDuration = (5 + Math.random() * 6) + 's';
   });
 }
