@@ -95,7 +95,7 @@
   border-radius: 16px;
   padding: 16px 22px;
   box-shadow: 0 4px 24px rgba(200,100,120,0.18);
-  min-width: 180px;
+  width: 100%;
 }
 
 .timeline-label {
