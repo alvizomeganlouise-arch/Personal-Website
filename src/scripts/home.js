@@ -1,5 +1,13 @@
 window.addEventListener('load', spawnPetals);
 
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) {
+    const container = document.getElementById('petalsContainer');
+    container.innerHTML = '';
+    spawnPetals();
+  }
+});
+
 function spawnPetals() {
   const container = document.getElementById('petalsContainer');
   const colors = ['#ffb7c5', '#ffc8d3', '#ff9db0', '#ffd8e0', '#ffaec0'];
