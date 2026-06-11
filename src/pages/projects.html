@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Megan Alvizo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/projects.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-home-link" onclick="window.location.href='../../index.html'">Home</span>
+      <span class="nailong">🐉</span>
+    </div>
+    <div class="nav-center">
+      <span class="star-icon">✦</span>
+      <span class="nav-verse">1 Corinthians 10:13</span>
+      <span class="star-icon">✦</span>
+    </div>
+    <div class="nav-right">
+      <button class="contact-btn" onclick="openContact()">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal" onclick="closeContact(event)">
+    <div class="modal-box">
+      <h3 class="modal-title">Let's connect! ✦</h3>
+      <div class="modal-links">
+        <a href="https://www.linkedin.com/in/megan-louise-alvizo-20a7b934a" target="_blank" class="modal-link">
+          <span class="modal-icon">💼</span> LinkedIn
+        </a>
+        <a href="https://www.instagram.com/meganalvi_" target="_blank" class="modal-link">
+          <span class="modal-icon">📸</span> @meganalvi_
+        </a>
+        <a href="mailto:alvizomeganlouise@gmail.com" class="modal-link">
+          <span class="modal-icon">✉️</span> alvizomeganlouise@gmail.com
+        </a>
+      </div>
+      <button class="modal-close" onclick="closeContact()">×</button>
+    </div>
+  </div>
+
+  <main class="projects-main">
+    <div class="page-header">
+      <h1><span class="star-pink">✦</span> Projects <span class="star-pink">✦</span></h1>
+      <p class="subtitle">A little garden of things I've built ✦</p>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image-side">
+        <img src="../assets/scotia-decoded.png" alt="Scotia Decoded" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="project-img-placeholder" style="display:none">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+      <div class="project-info-side">
+        <div class="project-number">1</div>
+        <h2 class="project-title">Scotia Decoded</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">An AI-powered investing education platform designed to help Gen Z understand stocks in simple, relatable language. Includes real-time stock explanations, a paper trading system, AI-generated learning content, and a virtual AI mentor to make investing feel less intimidating.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card reverse">
+      <div class="project-info-side">
+        <div class="project-number">2</div>
+        <h2 class="project-title">Gathering Matters Website Redesign</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">A nonprofit website redesign focused on helping young people build meaningful in-person connections. As a designer, I contributed to improving the website's structure, visual direction, and user experience to make resources feel more welcoming, accessible, and engaging.</p>
+      </div>
+      <div class="project-image-side">
+        <img src="../assets/gathering-matters.png" alt="Gathering Matters" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="project-img-placeholder" style="display:none">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image-side">
+        <img src="../assets/journal-app.png" alt="Personal Journal Web App" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="project-img-placeholder" style="display:none">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+      <div class="project-info-side">
+        <div class="project-number">3</div>
+        <h2 class="project-title">Personal Journal Web App</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">A digital journaling concept to help users reflect on feelings, goals, daily thoughts, and personal growth. Features include journal entries, to-do lists, affirmations, Bible verses, weather updates, image uploads, colour customization, and entry history.</p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card reverse">
+      <div class="project-info-side">
+        <div class="project-number">4</div>
+        <h2 class="project-title">Raider Runway Donation Initiative</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">A school leadership project where I helped organize a clothing donation initiative that collected over 450 donations. Contributed to planning, outreach, sponsorship communication, and team coordination.</p>
+      </div>
+      <div class="project-image-side">
+        <img src="../assets/raider-runway.png" alt="Raider Runway" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="project-img-placeholder" style="display:none">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card">
+      <div class="project-image-side">
+        <div class="project-img-placeholder">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+      <div class="project-info-side">
+        <div class="project-number">5</div>
+        <h2 class="project-title">VEX Robotics Design Project</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">A robotics project where I contributed to the design and build of a competitive robot. Involved mechanical design thinking, problem solving, testing ideas, and teamwork to improve performance.</p>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card reverse">
+      <div class="project-info-side">
+        <div class="project-number">6</div>
+        <h2 class="project-title">Faith-Based Content Series</h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">A creative content project sharing short reflections about faith, personal growth, anxiety, relationships, friendship, and healing, combining storytelling, Scripture, and reflective writing.</p>
+      </div>
+      <div class="project-image-side">
+        <img src="../assets/faith-content.png" alt="Faith-Based Content" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="project-img-placeholder" style="display:none">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="project-card">
+      <div class="project-image-side">
+        <div class="project-img-placeholder">
+          <span>🖼</span><span class="placeholder-text">Photo goes here</span>
+          <span class="placeholder-sub">Add an Image URL in projects.tsx</span>
+        </div>
+      </div>
+      <div class="project-info-side">
+        <div class="project-number">7</div>
+        <h2 class="project-title">Robotic Arm with Arduino <span class="in-progress-badge">in progress</span></h2>
+        <span class="project-fav">✦</span>
+        <p class="project-desc">Currently building a robotic arm at home using Arduino and basic materials, exploring servos, control logic, and mechanical design hands-on.</p>
+      </div>
+    </div>
+
+    <!-- Resume Button -->
+    <div class="resume-section">
+      <a href="#" class="resume-btn">📄 See my Resume</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>✦ Explore my website and feel free to connect! ✦</span>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

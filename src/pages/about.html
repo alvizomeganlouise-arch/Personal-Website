@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me – Megan Alvizo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/about.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-home-link" onclick="window.location.href='../../index.html'">Home</span>
+      <span class="nailong">🐉</span>
+    </div>
+    <div class="nav-center">
+      <span class="star-icon">✦</span>
+      <span class="nav-verse">1 Corinthians 10:13</span>
+      <span class="star-icon">✦</span>
+    </div>
+    <div class="nav-right">
+      <button class="contact-btn" onclick="openContact()">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal" onclick="closeContact(event)">
+    <div class="modal-box">
+      <h3 class="modal-title">Let's connect! ✦</h3>
+      <div class="modal-links">
+        <a href="https://www.linkedin.com/in/megan-louise-alvizo-20a7b934a" target="_blank" class="modal-link">
+          <span class="modal-icon">💼</span> LinkedIn
+        </a>
+        <a href="https://www.instagram.com/meganalvi_" target="_blank" class="modal-link">
+          <span class="modal-icon">📸</span> @meganalvi_
+        </a>
+        <a href="mailto:alvizomeganlouise@gmail.com" class="modal-link">
+          <span class="modal-icon">✉️</span> alvizomeganlouise@gmail.com
+        </a>
+      </div>
+      <button class="modal-close" onclick="closeContact()">×</button>
+    </div>
+  </div>
+
+  <main class="about-main">
+    <div class="page-header">
+      <h1><span class="star-pink">✦</span> About me <span class="star-pink">✦</span></h1>
+      <p class="subtitle">A little bit about who I am, and what I love ✦</p>
+    </div>
+
+    <!-- Bio card -->
+    <div class="bio-card card">
+      <p>I'm a second year Business and Mathematics student who loves turning ideas into reality, whether that's through designing websites, building projects, or working on initiatives that make a positive impact. I enjoy solving problems, learning new things, and finding creative ways to bring people together.</p>
+      <p>When I'm not working on a project, you can usually find me spending time with friends and family, at the gym, volunteering in my community, playing sports, attending church events, gaming or planning my next big idea. I love meeting new people, hearing their stories, and creating meaningful connections along the way.</p>
+      <p>I'm passionate about technology, design, and using both to build things that help others. Whether it's a nonprofit website, a hackathon project, or a community initiative, I believe the best ideas are the ones that make someone's day a little better.</p>
+    </div>
+
+    <!-- Journey -->
+    <section class="journey-section">
+      <h2 class="section-title"><span class="star-pink">✦</span> My journey <span class="star-pink">✦</span></h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-card">
+            <div class="timeline-label">BORN · 2007</div>
+            <div class="timeline-place">Philippines <span class="flag">🇵🇭</span></div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-label">MOVED · 2008</div>
+            <div class="timeline-place">United States <span class="flag">🇺🇸</span></div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-card">
+            <div class="timeline-label">MOVED · 2012</div>
+            <div class="timeline-place">Canada <span class="flag">🇨🇦</span></div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="grid-section">
+      <h2 class="section-title"><span class="star-pink">✦</span> Interests <span class="star-pink">✦</span></h2>
+      <div class="tag-grid">
+        <div class="tag-card"><span class="star-pink">✦</span> Technology &amp; Innovation</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Product Design</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Robotics</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Community Impact</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Personal Growth</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Faith</div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="grid-section">
+      <h2 class="section-title"><span class="star-pink">✦</span> Hobbies <span class="star-pink">✦</span></h2>
+      <div class="tag-grid hobbies-grid">
+        <div class="tag-card"><span class="star-pink">✦</span> Tutoring</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Volunteering</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Website Design</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Journaling</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Soccer</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Badminton</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Time with Friends</div>
+        <div class="tag-card"><span class="star-pink">✦</span> Church &amp; Community</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>✦ Explore my website and feel free to connect! ✦</span>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* ── Global Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Georgia', serif;
+  background: #fff0f3;
+  color: #5a2d3a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  background: #ffe4ea;
+  border-bottom: 1px solid #ffd0da;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-home-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #5a2d3a;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-home-link:hover { text-decoration: underline; }
+
+.nailong {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #c47f8a;
+  font-style: italic;
+}
+
+.star-icon { font-size: 12px; color: #e8a0af; }
+
+.contact-btn {
+  background: #e8798a;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.contact-btn:hover { background: #d4606f; }
+
+/* ── Modal ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(90,45,58,0.18);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.active { display: flex; }
+
+.modal-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 40px;
+  min-width: 320px;
+  box-shadow: 0 8px 32px rgba(200,100,120,0.15);
+  position: relative;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 20px;
+  color: #5a2d3a;
+  margin-bottom: 24px;
+  font-family: 'Georgia', serif;
+}
+
+.modal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff0f3;
+  border-radius: 12px;
+  padding: 12px 18px;
+  color: #5a2d3a;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.modal-link:hover { background: #ffd8e0; }
+
+.modal-icon { font-size: 18px; }
+
+.modal-close {
+  position: absolute;
+  top: 12px; right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #c47f8a;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-close:hover { color: #5a2d3a; }
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+  color: #c47f8a;
+  font-style: italic;
+  margin-top: auto;
+}
+
+/* ── Page header (used in sub-pages) ── */
+.page-header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+.page-header h1 {
+  font-size: 42px;
+  font-family: 'Georgia', serif;
+  color: #3d1a24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.page-header h1 .star-pink { color: #e8798a; font-size: 22px; }
+.page-header .subtitle {
+  font-size: 15px;
+  color: #b07080;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ── Decorative background stars ── */
+.deco-star {
+  position: absolute;
+  color: #e8a0af;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Card shared ── */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(200,100,120,0.08);
+  padding: 28px;
+}
+
+/* ── Tag / badge ── */
+.tag {
+  display: inline-block;
+  background: #fff0f3;
+  border: 1px solid #ffd0da;
+  color: #b07080;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+}

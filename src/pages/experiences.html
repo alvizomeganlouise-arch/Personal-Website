@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiences – Megan Alvizo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/experiences.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-home-link" onclick="window.location.href='../../index.html'">Home</span>
+      <span class="nailong">🐉</span>
+    </div>
+    <div class="nav-center">
+      <span class="star-icon">✦</span>
+      <span class="nav-verse">1 Corinthians 10:13</span>
+      <span class="star-icon">✦</span>
+    </div>
+    <div class="nav-right">
+      <button class="contact-btn" onclick="openContact()">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal" onclick="closeContact(event)">
+    <div class="modal-box">
+      <h3 class="modal-title">Let's connect! ✦</h3>
+      <div class="modal-links">
+        <a href="https://www.linkedin.com/in/megan-louise-alvizo-20a7b934a" target="_blank" class="modal-link">
+          <span class="modal-icon">💼</span> LinkedIn
+        </a>
+        <a href="https://www.instagram.com/meganalvi_" target="_blank" class="modal-link">
+          <span class="modal-icon">📸</span> @meganalvi_
+        </a>
+        <a href="mailto:alvizomeganlouise@gmail.com" class="modal-link">
+          <span class="modal-icon">✉️</span> alvizomeganlouise@gmail.com
+        </a>
+      </div>
+      <button class="modal-close" onclick="closeContact()">×</button>
+    </div>
+  </div>
+
+  <main class="exp-main">
+    <div class="page-header">
+      <h1><span class="star-pink">✦</span> Experiences <span class="star-pink">✦</span></h1>
+      <p class="subtitle">Work, volunteering &amp; a little skill garden ✦</p>
+    </div>
+
+    <!-- Work -->
+    <section class="exp-section">
+      <h2 class="exp-section-title"><span class="star-pink">✦</span> Work</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <h3 class="exp-role">Kumon Instructor</h3>
+          <div class="exp-date">2022 to Present</div>
+          <p class="exp-desc">Helped students build confidence in math and reading through personalized guidance. Developed strong communication, patience, and problem-solving skills working with learners of different ages and abilities.</p>
+          <div class="exp-tags">
+            <span class="tag">Education</span>
+            <span class="tag">Mentorship</span>
+            <span class="tag">Communication</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">ALS Double Play · Marketing &amp; Outreach Intern</h3>
+          <div class="exp-date">2026 to Present</div>
+          <p class="exp-desc">Created social media campaigns and educational content to raise awareness about ALS and support fundraising. Learned how storytelling, community engagement, and digital outreach create real impact.</p>
+          <div class="exp-tags">
+            <span class="tag">Marketing</span>
+            <span class="tag">Awareness</span>
+            <span class="tag">Social Impact</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Web Designer · Develop for Good</h3>
+          <div class="exp-date">2026 to Present</div>
+          <p class="exp-desc">Working with a nonprofit to redesign and develop a website that helps young adults build meaningful connections. Contribute to research, wireframing, prototyping, and accessible user-centered design.</p>
+          <div class="exp-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Product Design</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Private Tutor</h3>
+          <div class="exp-date">2025 to 2026</div>
+          <p class="exp-desc">Supported students in math, English, and French through personalized lessons tailored to their learning styles. Focused on building confidence, critical thinking, and long-term academic success.</p>
+          <div class="exp-tags">
+            <span class="tag">Teaching</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="exp-section">
+      <h2 class="exp-section-title"><span class="star-pink">✦</span> Volunteering</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <h3 class="exp-role">Royal City Soccer Club</h3>
+          <p class="exp-desc">Supported campers in a fun, active environment, helping facilitate games, activities, and teamwork. Learned how to create positive experiences for children of different ages.</p>
+          <div class="exp-tags">
+            <span class="tag">Teamwork</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Community</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">FIRST Robotics Volunteer</h3>
+          <p class="exp-desc">Assisted at robotics competitions, supporting teams, participants, and organizers to ensure events ran smoothly. Helped create a welcoming environment for STEM education and innovation.</p>
+          <div class="exp-tags">
+            <span class="tag">STEM</span>
+            <span class="tag">Event Support</span>
+            <span class="tag">Innovation</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Greener Education Foundation</h3>
+          <p class="exp-desc">Worked with students in hands-on programs focused on sustainability and environmental awareness. Inspired curiosity and engagement through interactive outdoor activities.</p>
+          <div class="exp-tags">
+            <span class="tag">Sustainability</span>
+            <span class="tag">Education</span>
+            <span class="tag">Outreach</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Community Kitchen</h3>
+          <p class="exp-desc">Helped prepare and serve meals for community members in need. Supported kitchen operations alongside a warm team of volunteers, learning the value of small acts of service and shared care.</p>
+          <div class="exp-tags">
+            <span class="tag">Service</span>
+            <span class="tag">Community</span>
+            <span class="tag">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skill Garden -->
+    <section class="skill-garden-section">
+      <h2 class="skill-garden-title">Skill Garden 🌸</h2>
+      <p class="skill-garden-sub">Pick a patch to see what's blooming</p>
+
+      <div class="skill-tabs" id="skillTabs">
+        <button class="skill-tab active" data-tab="technical" onclick="switchTab(this,'technical')">Technical</button>
+        <button class="skill-tab" data-tab="business" onclick="switchTab(this,'business')">Business</button>
+        <button class="skill-tab" data-tab="interpersonal" onclick="switchTab(this,'interpersonal')">Interpersonal</button>
+      </div>
+
+      <div class="skill-panel card active" id="technical">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink">✦</span> Python</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Racket</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Figma</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Canva</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> UI/UX Design</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Information Architecture</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Wireframing</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Website Prototyping</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> AI Tools (ChatGPT, Tavus, Lovable, Stitch)</span>
+        </div>
+      </div>
+
+      <div class="skill-panel card" id="business">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink">✦</span> Project Management</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Market Research</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Social Media Marketing</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Content Creation</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Stakeholder Communication</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Strategic Thinking</span>
+        </div>
+      </div>
+
+      <div class="skill-panel card" id="interpersonal">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink">✦</span> Leadership</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Teamwork</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Communication</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Mentorship</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Empathy</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Problem Solving</span>
+          <span class="skill-tag"><span class="star-pink">✦</span> Adaptability</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>✦ Explore my website and feel free to connect! ✦</span>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script>
+    function switchTab(btn, tabId) {
+      document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.skill-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
