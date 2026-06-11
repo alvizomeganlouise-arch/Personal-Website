@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiences – Megan Alvizo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/experiences.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-home-link" onclick="window.location.href='../../index.html'">Home</span>
+      <img src="../assets/nailong.png" class="nailong-img" alt="nailong" />
+    </div>
+    <div class="nav-center">
+      <span class="star-icon"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span>
+      <span class="nav-verse">1 Corinthians 10:13</span>
+      <span class="star-icon"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span>
+    </div>
+    <div class="nav-right">
+      <button class="contact-btn" onclick="openContact()">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal" onclick="closeContact(event)">
+    <div class="modal-box">
+      <h3 class="modal-title"><span class="flower">✿</span> Let's connect <span class="flower">✿</span></h3>
+      <div class="modal-links">
+        <a href="https://www.linkedin.com/in/megan-louise-alvizo-20a7b934a" target="_blank" class="modal-link">
+          <div class="modal-link-icon linkedin"><svg viewBox="0 0 24 24" fill="#e8798a" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+          <div class="modal-link-text"><span class="modal-link-label">LinkedIn</span><span class="modal-link-value">Megan Louise Alvizo's Profile</span></div>
+        </a>
+        <a href="https://www.instagram.com/meganalvi_" target="_blank" class="modal-link">
+          <div class="modal-link-icon instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+          <div class="modal-link-text"><span class="modal-link-label">Instagram</span><span class="modal-link-value">@meganalvi_</span></div>
+        </a>
+        <a href="mailto:alvizomeganlouise@gmail.com" class="modal-link">
+          <div class="modal-link-icon email"><svg viewBox="0 0 24 24" fill="none" stroke="#e8798a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+          <div class="modal-link-text"><span class="modal-link-label">Email</span><span class="modal-link-value">alvizomeganlouise@gmail.com</span></div>
+        </a>
+      </div>
+      <button class="modal-close" onclick="closeContact()">×</button>
+    </div>
+  </div>
+
+  <main class="exp-main">
+    <div class="page-header">
+      <h1><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Experiences <span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span></h1>
+      <p class="subtitle">Work, volunteering &amp; a little skill garden <img class="flower-icon" alt="✦" src="../assets/flower.png"></p>
+    </div>
+
+    <!-- Work -->
+    <section class="exp-section reveal">
+      <h2 class="exp-section-title"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Work</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <h3 class="exp-role">Kumon Instructor</h3>
+          <div class="exp-date">2022 to Present</div>
+          <p class="exp-desc">Helped students build confidence in math and reading through personalized guidance. Developed strong communication, patience, and problem-solving skills working with learners of different ages and abilities.</p>
+          <div class="exp-tags">
+            <span class="tag">Education</span>
+            <span class="tag">Mentorship</span>
+            <span class="tag">Communication</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">ALS Double Play · Marketing &amp; Outreach Intern</h3>
+          <div class="exp-date">2026 to Present</div>
+          <p class="exp-desc">Created social media campaigns and educational content to raise awareness about ALS and support fundraising. Learned how storytelling, community engagement, and digital outreach create real impact.</p>
+          <div class="exp-tags">
+            <span class="tag">Marketing</span>
+            <span class="tag">Awareness</span>
+            <span class="tag">Social Impact</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Web Designer · Develop for Good</h3>
+          <div class="exp-date">2026 to Present</div>
+          <p class="exp-desc">Working with a nonprofit to redesign and develop a website that helps young adults build meaningful connections. Contribute to research, wireframing, prototyping, and accessible user-centered design.</p>
+          <div class="exp-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Product Design</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Private Tutor</h3>
+          <div class="exp-date">2025 to 2026</div>
+          <p class="exp-desc">Supported students in math, English, and French through personalized lessons tailored to their learning styles. Focused on building confidence, critical thinking, and long-term academic success.</p>
+          <div class="exp-tags">
+            <span class="tag">Teaching</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="exp-section reveal">
+      <h2 class="exp-section-title"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Volunteering</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <h3 class="exp-role">Royal City Soccer Club</h3>
+          <p class="exp-desc">Supported campers in a fun, active environment, helping facilitate games, activities, and teamwork. Learned how to create positive experiences for children of different ages.</p>
+          <div class="exp-tags">
+            <span class="tag">Teamwork</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Community</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">FIRST Robotics Volunteer</h3>
+          <p class="exp-desc">Assisted at robotics competitions, supporting teams, participants, and organizers to ensure events ran smoothly. Helped create a welcoming environment for STEM education and innovation.</p>
+          <div class="exp-tags">
+            <span class="tag">STEM</span>
+            <span class="tag">Event Support</span>
+            <span class="tag">Innovation</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Greener Education Foundation</h3>
+          <p class="exp-desc">Worked with students in hands-on programs focused on sustainability and environmental awareness. Inspired curiosity and engagement through interactive outdoor activities.</p>
+          <div class="exp-tags">
+            <span class="tag">Sustainability</span>
+            <span class="tag">Education</span>
+            <span class="tag">Outreach</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <h3 class="exp-role">Community Kitchen</h3>
+          <p class="exp-desc">Helped prepare and serve meals for community members in need. Supported kitchen operations alongside a warm team of volunteers, learning the value of small acts of service and shared care.</p>
+          <div class="exp-tags">
+            <span class="tag">Service</span>
+            <span class="tag">Community</span>
+            <span class="tag">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skill Garden -->
+    <section class="skill-garden-section reveal">
+      <h2 class="skill-garden-title">Skill Garden 🌸</h2>
+      <p class="skill-garden-sub">Pick a patch to see what's blooming</p>
+
+      <div class="skill-tabs" id="skillTabs">
+        <button class="skill-tab active" data-tab="technical" onclick="switchTab(this,'technical')">Technical</button>
+        <button class="skill-tab" data-tab="business" onclick="switchTab(this,'business')">Business</button>
+        <button class="skill-tab" data-tab="interpersonal" onclick="switchTab(this,'interpersonal')">Interpersonal</button>
+      </div>
+
+      <div class="skill-panel card active" id="technical">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Python</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Racket</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Figma</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Canva</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> UI/UX Design</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Information Architecture</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Wireframing</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Website Prototyping</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> AI Tools (ChatGPT, Tavus, Lovable, Stitch)</span>
+        </div>
+      </div>
+
+      <div class="skill-panel card" id="business">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Project Management</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Market Research</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Social Media Marketing</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Content Creation</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Stakeholder Communication</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Strategic Thinking</span>
+        </div>
+      </div>
+
+      <div class="skill-panel card" id="interpersonal">
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Leadership</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Teamwork</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Communication</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Mentorship</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Empathy</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Problem Solving</span>
+          <span class="skill-tag"><span class="star-pink"><img class="flower-icon" alt="✦" src="../assets/flower.png"></span> Adaptability</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span><img class="flower-icon" alt="✦" src="../assets/flower.png"> Explore my website and feel free to connect! <img class="flower-icon" alt="✦" src="../assets/flower.png"></span>
+  </footer>
+
+  <div class="petals-container" id="petalsContainer"></div>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/home.js"></script>
+  <script>
+    function switchTab(btn, tabId) {
+      document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.skill-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* ── Home page ── */
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 40px;
+  gap: 20px;
+}
+
+.hero-stars { display: flex; gap: 10px; align-items: center; color: #e8798a; font-size: 14px; }
+.hero-stars .star-lg { font-size: 20px; }
+.hero-stars .star-sm { font-size: 12px; }
+
+.hero-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 400;
+  color: #3d1a24;
+  animation: pulse 3s ease-in-out infinite;
+  letter-spacing: -1px;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.02); }
+}
+
+.hero-subtitle { font-size: 18px; color: #8a5060; font-family: 'Georgia', serif; font-style: italic; }
+
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 1.5px solid #e0c5cc;
+  background: rgba(255,255,255,0.8);
+  color: #5a2d3a;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 2px 8px rgba(200,100,120,0.08);
+}
+.hero-btn:hover {
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(200,100,120,0.18);
+  transform: translateY(-2px);
+}

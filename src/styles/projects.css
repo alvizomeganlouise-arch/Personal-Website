@@ -1,0 +1,145 @@
+/* ── Projects Page ── */
+
+.projects-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(200,100,120,0.18);
+  display: flex;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+}
+
+.project-card.reverse { flex-direction: row-reverse; }
+
+/* Image side */
+.project-image-side {
+  flex: 0 0 42%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff8f9;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #e8798a;
+  font-size: 13px;
+  border: 2px dashed #f0c4cc;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  border-radius: 0;
+}
+.project-img-placeholder span:first-child { font-size: 28px; }
+.placeholder-text { font-weight: 500; color: #e8798a; }
+.placeholder-sub { font-size: 11px; color: #c47f8a; }
+
+/* Info side */
+.project-info-side {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.project-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #fff0f3;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c47f8a;
+  border: 1.5px solid #ffd0da;
+}
+
+.project-title {
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+  color: #3d1a24;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.project-fav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e8798a;
+  font-size: 16px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #7a4a55;
+  line-height: 1.65;
+}
+
+.in-progress-badge {
+  display: inline-block;
+  background: #ffe8d0;
+  color: #c87840;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* Resume button */
+.resume-section {
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #f5c2cc;
+  color: #5a2d3a;
+  border-radius: 30px;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(200,100,120,0.12);
+}
+.resume-btn:hover {
+  background: #efabb7;
+  box-shadow: 0 4px 16px rgba(200,100,120,0.2);
+}
+
+@media (max-width: 640px) {
+  .project-card, .project-card.reverse { flex-direction: column; }
+  .project-image-side { flex: 0 0 180px; min-height: 180px; }
+}
