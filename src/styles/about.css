@@ -38,56 +38,37 @@
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 20px;
   position: relative;
-  padding: 0 20px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
   left: 50%;
-  top: 20px;
-  bottom: 20px;
+  top: 0;
+  bottom: 0;
   width: 2px;
   background: #ffd0da;
   transform: translateX(-50%);
 }
 
 .timeline-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
   align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline-item.left {
-  justify-content: flex-start;
-  padding-right: calc(50% + 8px);
-}
-
-.timeline-item.right {
-  justify-content: flex-end;
-  padding-left: calc(50% + 8px);
-}
-
-.timeline-item.left .timeline-dot {
-  position: absolute;
-  right: calc(50% - 6px);
-}
-.timeline-item.right .timeline-dot {
-  position: absolute;
-  left: calc(50% - 6px);
+  gap: 10px;
 }
 
 .timeline-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background: #e8798a;
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 2px #ffd0da;
-  flex-shrink: 0;
+  justify-self: center;
+  z-index: 1;
 }
 
 .timeline-card {
@@ -95,7 +76,19 @@
   border-radius: 16px;
   padding: 16px 22px;
   box-shadow: 0 4px 24px rgba(200,100,120,0.18);
-  width: 100%;
+}
+
+.timeline-item.left  .timeline-card  { grid-column: 1; grid-row: 1; }
+.timeline-item.left  .timeline-dot   { grid-column: 2; grid-row: 1; }
+.timeline-item.left  .timeline-flag  { grid-column: 3; grid-row: 1; text-align: left; }
+.timeline-item.right .timeline-flag  { grid-column: 1; grid-row: 1; text-align: right; }
+.timeline-item.right .timeline-dot   { grid-column: 2; grid-row: 1; }
+.timeline-item.right .timeline-card  { grid-column: 3; grid-row: 1; }
+
+.timeline-flag {
+  font-size: 52px;
+  line-height: 1;
+  opacity: 0.85;
 }
 
 .timeline-label {
@@ -112,12 +105,7 @@
   font-family: 'Georgia', serif;
   color: #3d1a24;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
-
-.flag { font-size: 22px; }
 
 /* ── Tag grids ── */
 .tag-grid {

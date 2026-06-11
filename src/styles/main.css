@@ -10,6 +10,11 @@ body {
   flex-direction: column;
 }
 
+main, .navbar, .footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── Navbar ── */
 .navbar {
   display: flex;
@@ -30,7 +35,7 @@ body {
 }
 
 .nav-home-link {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
   color: #5a2d3a;
   cursor: pointer;
@@ -201,6 +206,32 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 24px rgba(200,100,120,0.18);
   padding: 28px;
+}
+
+/* ── Falling petals (all pages) ── */
+.petals-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  border-radius: 50% 0 50% 0;
+  background: #ffb7c5;
+  opacity: 0;
+  animation: petalFall linear infinite;
+}
+
+@keyframes petalFall {
+  0%   { transform: translateY(-20px) rotate(0deg); opacity: 0.8; }
+  80%  { opacity: 0.5; }
+  100% { transform: translateY(100vh) rotate(360deg) translateX(60px); opacity: 0; }
 }
 
 /* ── Flower icon ── */
