@@ -5,27 +5,74 @@ body {
   overflow-x: hidden;
 }
 
-/* Cherry blossom tree anchored to left side */
+/* Cherry blossom tree anchored to left side — flipped */
 .cherry-blossom-container {
   position: fixed;
   left: -10px;
   bottom: 0;
-  width: 210px;
-  height: 420px;
+  width: 240px;
+  height: 460px;
   pointer-events: none;
   z-index: 10;
-  opacity: 0;
+  transform: scaleX(-1); /* flip horizontally */
 }
-.cherry-blossom-container.grown { opacity: 1; }
 
 .cherry-tree-svg {
   width: 100%;
   height: 100%;
+  overflow: visible;
 }
 
-/* Blossom cluster animation */
-.blossom-cluster {
-  transition: opacity 1.5s ease;
+/* ── Branch grow animation ── */
+/* Each path draws itself using stroke-dashoffset */
+.tree-trunk,
+.tree-branch,
+.tree-twig {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+}
+
+.tree-trunk  { stroke: #b07840; stroke-width: 9; animation: growPath 1s ease-out forwards; animation-delay: 0.2s; }
+.b1          { stroke: #b8845a; stroke-width: 6; animation: growPath 0.7s ease-out forwards; animation-delay: 0.9s; }
+.b2          { stroke: #b8845a; stroke-width: 5; animation: growPath 0.7s ease-out forwards; animation-delay: 1.1s; }
+.b3          { stroke: #c09070; stroke-width: 4; animation: growPath 0.6s ease-out forwards; animation-delay: 1.5s; }
+.b4          { stroke: #c09070; stroke-width: 4; animation: growPath 0.6s ease-out forwards; animation-delay: 1.6s; }
+.b5          { stroke: #c8a080; stroke-width: 3; animation: growPath 0.5s ease-out forwards; animation-delay: 1.9s; }
+.b6          { stroke: #c8a080; stroke-width: 3; animation: growPath 0.5s ease-out forwards; animation-delay: 2.0s; }
+.b7          { stroke: #c8a080; stroke-width: 2; animation: growPath 0.5s ease-out forwards; animation-delay: 2.2s; }
+.b8          { stroke: #c8a080; stroke-width: 2; animation: growPath 0.5s ease-out forwards; animation-delay: 2.3s; }
+
+@keyframes growPath {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Blossoms fade+scale in after branches */
+.blossom {
+  opacity: 0;
+  transform-origin: center;
+  animation: bloomIn 0.6s ease-out forwards;
+}
+
+.blossom:nth-child(1)  { animation-delay: 2.6s; }
+.blossom:nth-child(2)  { animation-delay: 2.7s; }
+.blossom:nth-child(3)  { animation-delay: 2.75s; }
+.blossom:nth-child(4)  { animation-delay: 2.8s; }
+.blossom:nth-child(5)  { animation-delay: 2.85s; }
+.blossom:nth-child(6)  { animation-delay: 2.9s; }
+.blossom:nth-child(7)  { animation-delay: 2.95s; }
+.blossom:nth-child(8)  { animation-delay: 3.0s; }
+.blossom:nth-child(9)  { animation-delay: 3.05s; }
+.blossom:nth-child(10) { animation-delay: 3.1s; }
+.blossom:nth-child(11) { animation-delay: 3.15s; }
+.blossom:nth-child(12) { animation-delay: 3.2s; }
+
+@keyframes bloomIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  60%  { opacity: 0.9; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 /* Falling petals */
@@ -42,8 +89,6 @@ body {
 
 .petal {
   position: absolute;
-  width: 10px;
-  height: 10px;
   border-radius: 50% 0 50% 0;
   background: #ffb7c5;
   opacity: 0;
@@ -68,13 +113,7 @@ body {
   gap: 20px;
 }
 
-.hero-stars {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  color: #e8798a;
-  font-size: 14px;
-}
+.hero-stars { display: flex; gap: 10px; align-items: center; color: #e8798a; font-size: 14px; }
 .hero-stars .star-lg { font-size: 20px; }
 .hero-stars .star-sm { font-size: 12px; }
 
@@ -92,20 +131,9 @@ body {
   50%       { transform: scale(1.02); }
 }
 
-.hero-subtitle {
-  font-size: 18px;
-  color: #8a5060;
-  font-family: 'Georgia', serif;
-  font-style: italic;
-}
+.hero-subtitle { font-size: 18px; color: #8a5060; font-family: 'Georgia', serif; font-style: italic; }
 
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-}
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
 
 .hero-btn {
   display: inline-block;
