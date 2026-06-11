@@ -203,6 +203,15 @@ body {
   padding: 28px;
 }
 
+/* ── Flower icon ── */
+.flower-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 /* ── Scroll reveal ── */
 .reveal {
   opacity: 0;
