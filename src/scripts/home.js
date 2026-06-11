@@ -1,23 +1,6 @@
-// Cherry blossom tree grows on page load
 window.addEventListener('load', function () {
-  const container = document.getElementById('cherryTree');
-  const blossoms = document.querySelector('.blossom-cluster');
-
-  // Step 1: fade in container (tree trunk)
-  setTimeout(() => {
-    container.style.transition = 'opacity 1.2s ease';
-    container.style.opacity = '1';
-  }, 300);
-
-  // Step 2: reveal blossoms
-  setTimeout(() => {
-    if (blossoms) blossoms.style.opacity = '1';
-  }, 1400);
-
-  // Step 3: start falling petals
-  setTimeout(() => {
-    spawnPetals();
-  }, 1800);
+  // Petals start after branches finish growing (~3.5s)
+  setTimeout(spawnPetals, 3500);
 });
 
 function spawnPetals() {
@@ -50,7 +33,6 @@ function createPetal(container, colors, delay) {
 
   container.appendChild(petal);
 
-  // Re-spawn when animation ends
   petal.addEventListener('animationiteration', () => {
     petal.style.left = Math.random() * 100 + 'vw';
     petal.style.animationDuration = (5 + Math.random() * 6) + 's';
