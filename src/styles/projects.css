@@ -16,8 +16,9 @@
   box-shadow: 0 4px 24px rgba(200,100,120,0.18);
   display: flex;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 260px;
   position: relative;
+  align-items: stretch;
 }
 
 .project-card.reverse { flex-direction: row-reverse; }
