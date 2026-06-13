@@ -4,16 +4,19 @@ document.addEventListener('visibilitychange', () => {
   if (!document.hidden) {
     const container = document.getElementById('petalsContainer');
     container.innerHTML = '';
-    spawnPetals();
+    // Small delay to let the browser fully resume before restarting animations
+    setTimeout(spawnPetals, 50);
   }
 });
 
 function spawnPetals() {
   const container = document.getElementById('petalsContainer');
+  if (!container) return;
+  container.innerHTML = '';
   const colors = ['#ffb7c5', '#ffc8d3', '#ff9db0', '#ffd8e0', '#ffaec0'];
 
   for (let i = 0; i < 18; i++) {
-    createPetal(container, colors, i * 600);
+    createPetal(container, colors, i * 300);
   }
 }
 
