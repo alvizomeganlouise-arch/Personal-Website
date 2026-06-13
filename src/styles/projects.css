@@ -19,6 +19,12 @@
   min-height: 260px;
   position: relative;
   align-items: stretch;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(200,100,120,0.28);
 }
 
 .project-card.reverse { flex-direction: row-reverse; }
@@ -61,11 +67,10 @@
 /* Info side */
 .project-info-side {
   flex: 1;
-  padding: 28px 32px;
+  padding: 20px 24px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .project-header {
