@@ -18,8 +18,8 @@ body {
 }
 
 .hero-stars { display: flex; gap: 10px; align-items: center; color: #e8798a; font-size: 14px; }
-.hero-stars .star-lg { font-size: 20px; }
-.hero-stars .star-sm { font-size: 12px; }
+.hero-stars .star-lg { font-size: 32px; }
+.hero-stars .star-sm { font-size: 22px; }
 
 .hero-title {
   font-family: 'Times New Roman', Times, serif;
